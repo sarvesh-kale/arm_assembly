@@ -1,0 +1,24 @@
+memory is 32 bit addresses 
+addresses are stores in registers which are also 32 bits in nature 
+not every byte has an address 
+labels are symbolic names for addresses in program 
+addresses may refer to either data or code 
+
+assembler is a thin layer on top of binary code
+
+.balign 4 is a directive that ensures that the next address starts on 4 byte boundary eg 
+
+.balign 4 
+myword: 
+	.word 3
+
+.word directive ensures that 3 is stored as 4 byte integer
+
+.text is the code section of assembly 
+
+.data is the data section of assembly
+
+.data section contents can be modified by processor 
+.test section content cannot be modified for security reasons
+
+ldr r1,=myvar @ r1 <- &myvar, myvar in memory 
