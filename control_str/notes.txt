@@ -1,0 +1,55 @@
+translating if then else into assembly 
+
+CONDITIONALS 
+
+if_eval :
+assembler evaluates cond and updates cpsr 
+bXX else_part @ XX is the appropriate conditional statement  
+then_part :
+
+b end_of_if 
+else part :
+
+end_of if :
+
+LOOPING WHILE 
+
+while(E)
+	S 
+
+translates in assembly to 
+while_condition:
+assembler code to evaluate E and update cpsr 
+bXX end_of_loop
+assembler code for the statement S 
+b while_condition 
+end_of_loop
+
+FOR LOOPING 
+for(i=L; i<N; i+=K)
+	S 
+is equivalent to 
+i = L;
+while(i < N)
+{
+	S ;
+	i += K;
+}
+so it is just while loop but with some extra added lines !!
+
+sum_natural.s is a program that computes the 
+sum of first n natural numbers 
+
+one more important thing to note is that the return code 
+when the program exits is 0 - 255 because of 8 bit nature 
+even if the number residing in the reg is 32 bit in nature 
+so get correct answers always run in gdb and query 
+register info 
+
+
+collatx conjecture ...Why dont you just google it !!
+
+never insert ":" at the branch statement line 
+eg 
+
+bne then: <- this is wrong 
