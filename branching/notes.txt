@@ -1,0 +1,16 @@
+16 regs in arm 
+some of them are special purpose regs 
+r15 is pc (pc contains addr of next instr to be executed )
+pc is incremented evry instr as instructions are 32 bit wide 
+
+the process of changing value of pc is called branching
+
+more useful to branch when condition is met
+cpsr is another important register 
+various flags are set and reset Acc to some arithmetic expr execution
+
+the flags are c, z, v, n flag 
+
+various mnemonics can be combined with b instr to form a branching scenario
+
+bal is branch always 
