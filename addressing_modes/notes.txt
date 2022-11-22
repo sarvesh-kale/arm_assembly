@@ -1,0 +1,25 @@
+arm instr follow the template 
+
+instr dest, src1, src2, [shifts]
+instr dest, src2, [shifts]
+
+
+the following instrs are imp 
+
+lsl @ logical shift left 
+
+mov r0, r1, lsl 3 @ r0 <- (2**3)*r1
+
+similar instrs are 
+lsr @ means logical shift right 
+asr @ this is imp retains the msb in the last 
+ror @ the whole register is treated as a circular chain 
+ 
+these instruction can be combined with 
+register src2 of the arm instruction 
+
+rsb r1,r1,r1,lsl #3 @ put r1*8 - r1 in r1
+
+rsb stands for reverse subtract
+
+generic mul instructions is difficult to compute by our arm processor 
