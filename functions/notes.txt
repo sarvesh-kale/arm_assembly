@@ -22,4 +22,6 @@ rules
 
 function should use r0 for returning data 
 
+the scanf modifies the register contents after it returns 
+do not use the register blindly if the function used in blind box to you 
 
