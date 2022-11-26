@@ -1,0 +1,25 @@
+function are a good way to reuse code 
+
+pass diff parameter and get a different result and hence a reuse
+
+we must follow some rules while writing func at such low level of programming they are arm architecture procesure call standard 
+
+r15 pc (program counter )
+r14 lr (link register hold the addr of the instr following the instr that called us)
+r13 sp (stack pointer, stores top of stack)
+
+stack is area of memory owned only by the current function 
+
+PASSING PARAMETERS 
+the first four parameters if it to follow standards be stored sequentially in r0, r1, r2, r3,
+for passing argc > 4 use stack
+
+rules 
+@ do not use cpsr 
+@ free to modify the r0, r1, r2, r3 
+@ can modify lr, but before that store its value somewhere as it will be used while exiting the function
+@ can modify the gpr r4 to r11 but the contents must be restored before leaving the function
+
+function should use r0 for returning data 
+
+
