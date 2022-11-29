@@ -1,0 +1,50 @@
+when a function call itself it is called recursion
+
+some of the most basic methods of software engineering are based on recursion
+
+recursive def of function always includes some base case
+
+recursive case must make progress toward base case
+
+some rules 
+r0 to r3 can be modified 
+
+lr value at entry of function should be kept somewhere
+
+all regs r4 to r11 and sp may be modified but must be restored upon leaving the function
+
+stack has two info 
+push -> put things on top of each other 
+
+pop -> remove the top most entry
+
+the stack is a region in memory owned solely by the current 
+dynamic activation
+
+sp or stack pointer will contain the address of top of stack
+
+the diff between value of sp before function call and after the function call is call the local are of memory of function
+
+we will put whatever has to be saved there on entry of function and restored before leaving anf also local variables of a function which also must be removed upo exit from the function
+
+the sp must always be 4 bytes aligned
+
+however due to procedure call standards sp has to be 8 byte aligned 
+
+sp entry = sp exit 
+
+in raspberry pi raspbian stack grows downwards i
+
+eg on how to use stack 
+
+sub sp,sp,#8  @ enlarge stack by 8 bytes 
+str lr,[sp]   @ store lr 
+ ... << code for function >> ...
+ldr lr,[sp]
+add sp,sp,#8 @ reduce stack by 8 bytes restoring sp to original value
+bx lr
+
+note we have followed the rule here that 
+sp entry = sp exit
+
+
