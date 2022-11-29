@@ -1,0 +1,9 @@
+
+HEX code converter to assembly 
+https://onlinedisassembler.com/odaweb/
+
+RISC V interpreter
+https://www.cs.cornell.edu/courses/cs3410/2019sp/riscv/interpreter/
+
+Good resource for CPU understanding 
+https://bob.cs.sonoma.edu/IntroCompOrg-RPi/CPU-overview.html
