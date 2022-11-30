@@ -22,4 +22,12 @@ rsb r1,r1,r1,lsl #3 @ put r1*8 - r1 in r1
 
 rsb stands for reverse subtract
 
-generic mul instructions is difficult to compute by our arm processor 
+generic mul instructions is difficult to compute by our arm processor
+
+ldm stands for load multiple 
+stm stands for store multiple
+
+ldm addr-mode base{!}, reg_set 
+stm addr-mode base{!}, reg_set
+
+

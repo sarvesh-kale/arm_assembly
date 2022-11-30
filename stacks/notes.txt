@@ -47,4 +47,4 @@ bx lr
 note we have followed the rule here that 
 sp entry = sp exit
 
-
+pop {r0-r4} pushes these register onto stack 
