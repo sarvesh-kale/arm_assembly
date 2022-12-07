@@ -1,5 +1,5 @@
 @ always write pseudo code and then convert to assembly 
-
+@ number 1 entered should be greater than number 2 entered
 .data 
 
 .balign 4
