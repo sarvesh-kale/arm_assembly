@@ -11,7 +11,7 @@ msg1: .asciz "Enter the string to calculate lenght=\n"
 .balign 4
 scan: .asciz "%s"
 .balign 4
-string: .asciz ""
+string: .skip 100 
 .balign 4
 result: .asciz "The string length is %d\n"
 
