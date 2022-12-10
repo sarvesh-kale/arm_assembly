@@ -7,7 +7,7 @@
 .data 
 
 .balign 4
-msg1: .asciz "Enter the string to calculate lenght=\n"
+msg1: .asciz "Enter the string to calculate length=\n"
 .balign 4
 scan: .asciz "%s"
 .balign 4
