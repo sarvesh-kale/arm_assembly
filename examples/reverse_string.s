@@ -2,6 +2,7 @@
 @ comment your code 
 @ this code extends the count string length program 
 @ in this code we are going to reverse the string 
+@ this code cannot read the white spaces in sentence 
 @ declare in data section as you use in text section 
 @ Author : Sarvesh Kale 
 
