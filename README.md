@@ -3,8 +3,8 @@
 The file compile.sh receives 1 argument as name of the file without .s extention
 Suppose you want to compile ex1.s then do the following 
 
-./compile.sh ex1 
--o compute
+./compile.sh ex1 -o compute
+
 compile.sh only takes 1 argument as input 
 
 - To compile in command line you can execute the following 
